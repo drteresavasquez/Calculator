@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Calculate, Yo!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -9,22 +10,31 @@
 Create an HTML file that has two input fields to accept the two numbers to perform operations on.
 
 Create 4 buttons to perform each of the basic mathematical functions (add, subtract, multiply, divide). -->
-<div id="math">
-<input type="number" id="number-one" name="number-one"><br>
-<input type="number" id="number-two" name="number-two"><br>
+<h1>Calculate, Yo!</h1>
+	<div id="wrapper">
+		<div id="math">
+			Number 1: <br><input type="number" id="number-one" name="number-one"><br>
+			Number 2:<br><input type="number" id="number-two" name="number-two"><br>
+		</div>
 
-<button id="add">Add (+)</button><br>
-<button id="subtract">Subtract (-)</button><br>
-<button id="multiply">Multiply (*)</button><br>
-<button id="divide">Divide (/)</button>
-</div>
+		<div id="outputs">
+			<div id="numberoneinput"></div>
+			<div id="symbol"></div>
+			<div id="numbertwoinput"></div>
 
-<div id="numberoneinput"></div>
-<div id="symbol"></div>
-<div id="numbertwoinput"></div>
+			<div id="solution"></div>
+		</div>
 
-<div id="solution"></div>
+			<div id="buttons">
+				<button id="add">Add (+)</button><br>
+				<button id="subtract">Subtract (-)</button><br>
+				<button id="multiply">Multiply (*)</button><br>
+				<button id="divide">Divide (/)</button>
+			</div>
+		
 
+		
+	</div>
 <script type="text/javascript" src="calculator.js"></script>
 </body>
 </html>

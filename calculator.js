@@ -32,8 +32,13 @@ let answer = document.getElementById("solution");
 function multiplyIt(m){
 	let inputOne = Number(numberOne.value);
 	let inputTwo = Number(numberTwo.value);
-	let answerText = inputOne * inputTwo;
-	answer.innerHTML = `Your answer is: ${answerText}`
+
+	if ((inputOne === 0 || inputTwo === 0) || (inputOne === 0 && inputTwo === 0)){
+            		alert("Please enter a value in both fields, Yo!");
+       			}
+	
+	else {let answerText = inputOne * inputTwo;
+	answer.innerHTML = ` = ${answerText}`};
 }
 
 multiplication.addEventListener("click", multiplyIt);
@@ -54,8 +59,13 @@ multiplication.addEventListener("click", multiplyIt);
 function addIt(m){
 	let inputOne = Number(numberOne.value);
 	let inputTwo = Number(numberTwo.value);
-	let answerText = inputOne + inputTwo;
-	answer.innerHTML = `Your answer is: ${answerText}`
+
+	if ((inputOne === 0 || inputTwo === 0) || (inputOne === 0 && inputTwo === 0)){
+            		alert("Please enter a value in both fields, Yo!");
+       			}
+	
+	else {let answerText = inputOne + inputTwo;
+	answer.innerHTML = ` = ${answerText}`};
 }
 addition.addEventListener("click", addIt);
 
@@ -73,8 +83,13 @@ addition.addEventListener("click", addIt);
 function subtractIt(m){
 	let inputOne = Number(numberOne.value);
 	let inputTwo = Number(numberTwo.value);
-	let answerText = inputOne - inputTwo;
-	answer.innerHTML = `Your answer is: ${answerText}`
+
+	if ((inputOne === 0 || inputTwo === 0) || (inputOne === 0 && inputTwo === 0)){
+            		alert("Please enter a value in both fields, Yo!");
+       			}
+	
+	else {let answerText = inputOne - inputTwo;
+	answer.innerHTML = ` = ${answerText}`};
 };
 
 subtraction.addEventListener("click", subtractIt);
@@ -93,15 +108,20 @@ subtraction.addEventListener("click", subtractIt);
 function divideIt(m){
 	let inputOne = Number(numberOne.value);
 	let inputTwo = Number(numberTwo.value);
-	let answerText = inputOne / inputTwo;
-	answer.innerHTML = `Your answer is: ${answerText}`
+
+	if ((inputOne === 0 || inputTwo === 0) || (inputOne === 0 && inputTwo === 0)){
+            		alert("Please enter a value in both fields, Yo!");
+       			}
+	
+	else {let answerText = inputOne / inputTwo;
+	answer.innerHTML = ` = ${answerText}`};
 };
 
 division.addEventListener("click", divideIt);
 //this allows the user to see which button/mathmatical evaluator was selected
 	division.addEventListener("click", function(d){
 		// console.log("d", d);
-		symbol.innerHTML = "/";
+		symbol.innerHTML = " / ";
 	});
 
 
