@@ -1,3 +1,4 @@
+"use strict";
 console.log("calculator.js, yo!");
 
 //pull the IDs from the input elements to evaluate
@@ -12,7 +13,7 @@ let division = document.getElementById("divide");
 
 //place to output the answer once evaluated using the mathmatical functions
 let answer = document.getElementById("solution");
-// let symbol = document.getElementById("symbol");
+let symbol = document.getElementById("symbol");
 
 
 //with this, I wanted the number entered to be displayed in the HTML to give the feel of an acutal calculator
@@ -45,6 +46,7 @@ multiplication.addEventListener("click", multiplyIt);
 
 //this allows the user to see which button/mathmatical evaluator was selected
 	multiplication.addEventListener("click", function(m){
+		// console.log(symbol);
 		// console.log("m", m);
 		symbol.innerHTML = "*";
 	});
