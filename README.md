@@ -1,4 +1,4 @@
-# calculator
+# JAVASCRIPT CALCULATOR
 
 ![alt text](https://i0.wp.com/www.drteresavasquez.com/wp-content/uploads/2017/06/Slide02.jpg "Interactive Calculator")
 
